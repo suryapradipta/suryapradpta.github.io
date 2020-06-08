@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="I Nyoman Surya Pradipta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Pradipta's Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- CONTENT-WRAP STARTS-->
+    <div class="content-wrap">
+    	
+        <!-- CONTENT STARTS-->
+        <div class="content">
+            <h1>
+                <div id="text"></div>
+                Thankyou for clicking on my link.
+            </h1>
+            <p>Hello, My name is Surya. I’m 19. I’m Indonesian. I’m an entrepreneur. I live in Bali now. I like music and all about things of technology. I don’t like people who lie.</p>
+        </div>
+    	<!-- CONTENT ENDS-->
+    
+    </div>
+    <!-- CONTENT-WRAP ENDS-->
+	
+    <!-- SCRIPTS -->
+	<script type="text/javascript">
+	  var i=0,text;
+	  text = "Hi, What's up?"
+
+	  function typing() {
+	    if(i<text.length){
+	      document.getElementById("text").innerHTML += text.charAt(i);
+	      i++;
+	      setTimeout(typing,80);
+	    }
+	  }
+	  typing();
+	</script>
+    </body>
+</html>
+
